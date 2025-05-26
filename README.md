@@ -4,7 +4,7 @@ Program ini bertujuan untuk menyelesaikan Traveling Salesman Problem (TSP) mengg
 
 ## Cara Kerja (Ringkas)
 
-Algoritma yang digunakan adalah algoritma Held-Karp, sebuah algoritma pemrograman dinamis yang memiliki kompleksitas waktu O(N² \* 2^N), di mana N adalah jumlah simpul (kota).
+Algoritma yang digunakan adalah algoritma Held-Karp, sebuah algoritma pemrograman dinamis yang memiliki kompleksitas waktu `O(N² \* 2^N)`, di mana N adalah jumlah simpul (kota).
 
 Secara singkat, algoritma ini bekerja dengan cara:
 
@@ -29,7 +29,7 @@ Untuk mendapatkan performa terbaik, kompilasi program dalam mode rilis:
 cargo build --release
 ```
 
-Executable akan tersedia di direktori target/release/tsp_stima.
+Executable akan tersedia di direktori `target/release/tsp_stima`.
 
 ## Cara Penggunaan
 Program menerima satu argumen baris perintah, yaitu path menuju file teks yang berisi matriks ketetanggaan (adjacency matrix) dari graf.
@@ -40,7 +40,7 @@ Program menerima satu argumen baris perintah, yaitu path menuju file teks yang b
 ```
 ### Contoh:
 ```sh
-./target/release/tsp_stima ./tests/case1_graph_standar_4x4.txt
+./target/release/tsp_stima ./tests/1.txt
 ```
 Jika tidak ada argumen file yang diberikan, program akan menjalankan beberapa contoh kasus uji bawaan.
 
